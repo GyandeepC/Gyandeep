@@ -1,0 +1,21 @@
+  List = [5, 6, 8, 20, 65, 10, 9, 95]
+
+def splitevenodd(x):
+   even = []
+   odd = []
+   for i in x:
+      if (i % 2 == 0):
+         even.append(i)
+      else:
+         odd.append(i)
+   print("Even lists:", even)
+   print("Odd lists:", odd)
+def valcheck():
+
+    if List[0] == List[len(List)-1]:
+        return True
+    else:
+        return False
+
+print ("Check if first and last number are same by equivalence: ", valcheck())
+splitevenodd(List)
